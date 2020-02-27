@@ -1,20 +1,55 @@
-@media (min-width: 768px) {
-  .h-md-100 {height: 100vh;}
+@media (min-width: 992px) {
+  	.h-md-100 {
+  		height: 100vh;
+  	}
 }
 
-.btn-round { border-radius: 30px;}
-.bg-indigo {background: indigo;}
-.text-cyan { color: #35bdff;}
+@media (max-width: 992px) {
+  	.container-pb {
+		padding-bottom: 75px;
+	}
+}
+
+@media (min-width: 992px) {
+  	.container-pb {
+		padding-bottom: 20px;
+	}
+}
+
+.border-dark {
+	border: solid 1px #222;
+}
 
 body {
 	height: 100vh;
     min-height: 100vh;
     background-color: black;
-    color: #7C7C7C;
+}
+
+.background-dark {
+	color: #7C7C7C;
     background: rgb(27,30,37);
     background: -moz-linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(0,0,0,1) 100%);
     background: -webkit-linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(0,0,0,1) 100%);
     background: linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1e25",endColorstr="#000000",GradientType=1);
+}
+
+.background-blue {
+	color: #7C7C7C;
+    background: rgb(27,30,37);
+    background: -moz-linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(57,79,130,1) 100%);
+    background: -webkit-linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(57,79,130,1) 100%);
+    background: linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(57,79,130,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1e25",endColorstr="#000000",GradientType=1);
+}
+
+.background-red {
+	color: #7C7C7C;
+    background: rgb(27,30,37);
+    background: -moz-linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(94,80,80,1) 100%);
+    background: -webkit-linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(94,80,80,1) 100%);
+    background: linear-gradient(187deg, rgba(27,30,37,1) 0%, rgba(94,80,80,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1e25",endColorstr="#000000",GradientType=1);
 }
 
@@ -28,6 +63,7 @@ body {
     height:auto;
     max-height:100%;
     padding-top: 60px;
+    
 }
 
 .scrollDiv::-webkit-scrollbar {
@@ -140,17 +176,38 @@ body {
 }
 
 .flag {
-	vertical-align: middle;
-  	width: 1.5rem;
+  	padding: 0;
+  	max-height: 40px;
 }
 
 .player-box {
-	font-size: 0.75rem;
+	font-size: 0.7rem;
+	font-weight: 500;
+	text-transform: uppercase;
 	width: 40%;
 	height: 2.5rem;
 	margin: 0.5rem;
 	padding: 0.5rem;
-	border: 1px solid #7C7C7C;
+	border: 1px solid #7C7C7C;	
+}
+
+.player-box:hover {
+	background-color: #128CB4;
+	border: 1px solid #212529;
+	color: black;
+}
+
+.p-left {
+	padding: 0;
+}
+
+.p-right {
+	padding: 0;
+}
+
+.percentage {
+	font-size: 0.5rem;
+	padding: 0;
 }
 
 .card {
@@ -158,12 +215,7 @@ body {
 	font-size: 0.75rem;
 }
 .betContainer {
-	height: 100vh;
-	padding-top: 20px;
-}
-
-.betContainer .card {
-	width: 17rem;	
+	width: auto;
 }
 
 /* BET SLIP*/
